@@ -1,0 +1,44 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "build": "rimraf dist && tsc -p . --sourceMap false",
+    "start": "nodemon",
+    "lint": "eslint . --ext .ts --fix",
+    "debug": "npm run lint && rimraf dist && tsc -p . --sourceMap true"
+  },
+  "type": "commonjs",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "async": "^3.2.6",
+    "config": "^4.0.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "luxon": "^3.7.1",
+    "mongoose": "^8.16.3"
+  },
+  "devDependencies": {
+    "@types/async": "^3.2.24",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/luxon": "^3.6.2",
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^24.0.13",
+    "@typescript-eslint/eslint-plugin": "^8.36.0",
+    "@typescript-eslint/parser": "^8.36.0",
+    "dotenv": "^17.2.0",
+    "eslint": "^9.30.1",
+    "nodemon": "^3.1.10",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.36.0"
+  }
+}

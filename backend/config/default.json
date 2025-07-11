@@ -1,0 +1,13 @@
+{
+  "sourcePath": "dist",
+  "db": {
+    "mongo": {
+      "data": {
+        "options": {}
+      }
+    },
+    "schema": {
+      "version": 1
+    }
+  }
+}
